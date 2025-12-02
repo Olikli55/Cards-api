@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="general.css">
     <title>cards</title>
 </head>
 <body>
-    <button  onclick="shuffle()">Shuffle Deck</button>
 
+
+
+
+    <div class="controls">
+        <button onclick="shuffle()">Shuffle Deck</button>
+        <button onclick="startGame()">Play Higher/Lower</button>
+        <button onclick="guess(true)">Higher</button>
+        <button onclick="guess(false)">Lower</button>
+        <h2 id="score">Score: 0</h2>
+    </div>
 
     <div id="cards"></div>
-
 
 </body>
 </html>     
